@@ -3,34 +3,28 @@ import { Header } from '../components/Header'
 import { Card } from '../components/Card'
 import apiFruit from '../services/api'
 
-const loadingFruit = async setFruit => {
-  const { result } = await apiFruit()
-
-  setFruit(result)
-}
-
-
-
 function Home() {
 
   const [loadingFruit, setFruit] = useState([])
 
   useEffect(() => {
-    apiFruit.get().data.loadingFruit(setFruit)
-  },[])
+    const res = apiFruit.get("")
+    setFruit(res.data)
 
+    console.log(res)
+  },[])
+ 
   return (
     <>
-    <header>
-      <Header />
-    </header>
-    <main>
+      <header>
+        <Header />
+      </header>
+      <main>
 
-    {setFruit.map(({name, photo}) => (
-    <Card key={name} name={name} img={photo}/>
+      {loadingFruit.map(item => (
+        <Card key={item.name} name={item.name} img={item.photo}/>
       ))}
-      
-    </main>
+      </main>
     </>
   )
 }
