@@ -1,0 +1,28 @@
+.card {
+  width: 720px;
+  background-color: #f1f1f1;
+  border-radius: 7px;
+  margin: 0 0 10px 0;
+  cursor: pointer;
+  transition: all 0.2s;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+card:hover {
+  box-shadow: rgb(32 33 36 / 28%) 0px 1px 6px 0px;
+}
+
+.description {
+  padding: 20px 10px;
+}
+.description  > h3 {
+    font-size: 16px;
+}
+
+.description  p {
+    font-size: 13px;
+}
+

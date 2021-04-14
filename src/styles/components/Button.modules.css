@@ -1,0 +1,22 @@
+button {
+
+  padding: 0.55rem 1rem;
+  border-radius: 0.313rem;
+  border: 0;
+  font-weight: 700;
+  font-size: 0.875rem;
+  line-height: 1.625rem;
+  text-transform: uppercase;
+  transition: all .2s;
+  cursor:pointer;
+  display: inline-flex;
+  justify-content:center;
+  align-items: center;
+  margin-left: 0.25rem;
+  background: var(--pink);
+  color: #fff;
+}
+
+button:hover {
+  background: #df7490;
+}
