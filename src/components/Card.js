@@ -1,19 +1,23 @@
-import React, { useEffect }  from 'react';
+import PropTypes from 'prop-types'
 import styles from '../styles/components/Card.modules.css'
-import api from '../services/api'
-export  function Card() {
+
+export  function Card(props) {
   return (
     
     <div className="card">
 
       <div className="description">
-        <h3>nome</h3>
+        <h3>{props.name}</h3>
         <p>Clique para saber mais</p>
       </div>
-      <img src= 'img' alt='name' loading="lazy" />
+      <img src= {props.image} alt={props.name} loading="lazy" />
     </div>
 
-
-
   )
+
+}
+
+Card.propTypes = {
+  name: PropTypes.string.isRequired,
+  img: PropTypes.string.isRequired
 }
