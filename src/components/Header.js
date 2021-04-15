@@ -1,11 +1,9 @@
-import styles from '../styles/components/Header.modules.css'
-import { Button } from './Button'
+import '../styles/components/Header.modules.css'
+
 export function Header() {
   return (
     <header className="header">
-      <Button />
-
-      <p>Delicious fruits </p>
+      <h1>Delicious fruits </h1>
       <div></div>
     </header>
   )

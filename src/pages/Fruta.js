@@ -1,24 +1,15 @@
-import { useState, useEffect } from 'react'
-import { Header } from '../components/Header'
-import { Card } from '../components/Card'
-import apiFruit from '../services/api'
+
+import { Header } from '../components/HeaderFruit'
+import { CardFruit } from '../components/CardFruit'
+
 
 function Fruta() {
-  const [loadingFruit, setFruit] = useState([])
-    useEffect(() => {
-      async function fetchData() {
-      const res = await apiFruit.get("")
-        setFruit(res.data)
-      }
-      fetchData()
-    },
-[])
-
+  
 return (
   <section>
     <Header />
     <div className="card">
-       <Card  />
+      <CardFruit />
     </div>
   </section>
 )

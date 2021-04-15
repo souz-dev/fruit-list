@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import { Header } from '../components/Header'
 import { Card } from '../components/Card'
 import apiFruit from '../services/api'
-import styles from '../styles/pages/Home.modules.css'
+import '../styles/pages/Home.modules.css'
 
 function Home() {
 

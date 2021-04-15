@@ -1,6 +1,6 @@
-import Axios from 'axios'
+import axios from 'axios'
 
-const apiFruit = Axios.create({
+const apiFruit = axios.create({
  baseURL: 'https://pocs.digitalpages.com.br/mock/api/fruits-api/fruits.json'
 })
 
