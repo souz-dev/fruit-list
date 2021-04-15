@@ -1,17 +1,18 @@
 
 import { Header } from '../components/HeaderFruit'
-import { useState, useEffect } from 'react'
+import { useState, useEffect, } from 'react'
+import { useParams } from 'react-router-dom'
 import apiFruit from '../services/api'
 import '../styles/pages/Fruta.modules.css'
 
 
 function Fruta() {
   
-  const { name} = useParams()
+  const {name} = useParams()
 
   const [loadingFruit, setFruit] = useState([])
     useEffect(() => {
-      async function fetchData(name) {
+      async function fetchData() {
       const res = await apiFruit.get("")
         setFruit(res.data)
       }
