@@ -1,46 +1,46 @@
 .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }
 
 .container > .card {
-    background-color: #d1d1d1;
-    border-radius: 7px;
-    margin: 0.75rem;
-    cursor: pointer;
-    transition: all 0.2s;
-    display: flex;
-    flex: 1;
-    max-width: 500px;
-    align-items: center;
-    justify-content: space-around;
-    padding: 1.5rem;
+  background-color: #d1d1d1;
+  border-radius: 7px;
+  margin: 0.75rem;
+  cursor: pointer;
+  transition: all 0.2s;
+  display: flex;
+  flex: 1;
+  max-width: 500px;
+  align-items: center;
+  justify-content: space-around;
+  padding: 1.5rem;
   
-  }
+}
   
-  .card:hover {
-    box-shadow: rgb(32 33 36 / 28%) 0px 1px 6px 0px;
-  }
+.card:hover {
+  box-shadow: rgb(32 33 36 / 28%) 0px 1px 6px 0px;
+}
   
-  .description {
-    padding: 20px 10px;
-  }
-  .description  > h3 {
-      font-size: 16px;
-  }
+.description {
+  padding: 20px 10px;
+}
+.description  > h3 {
+  font-size: 16px;
+}
   
-  .description  p {
-      font-size: 13px;
-  }
+.description  p {
+  font-size: 13px;
+}
   
-  img {
-    max-width: 100px;
-    border-radius: 7px;
-    height: 100%;
-  }
+img {
+  max-width: 100px;
+  border-radius: 7px;
+  height: 100%;
+}
   
-  .fruit-container {
-      height: 82.4vh;
-  }
+.fruit-container {
+  height: 82.4vh;
+}

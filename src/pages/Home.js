@@ -9,11 +9,11 @@ function Home() {
 
   const [loadingFruit, setFruit] = useState([])
 
-  useEffect(() => {
-    async function fetchData() {
+    useEffect(() => {
+      async function fetchData() {
       const res = await apiFruit.get("")
       setFruit(res.data)
-    }
+}
 
     fetchData()
   },[])
@@ -25,11 +25,11 @@ function Home() {
       </header>
       <main className="cards"> 
 
-      {loadingFruit.map(item => (
+      {loadingFruit.map((item) => (
         <Card key={item.name} name={item.name} img={item.photo}/>
       ))}
       </main>
-      <Footer />
+        <Footer />
     </div>
   )
 }

@@ -6,12 +6,11 @@ import apiFruit from '../services/api'
 import '../styles/pages/Fruta.modules.css'
 import { Footer } from '../components/Footer'
 
-
 function Fruta() {
   
   const {name} = useParams()
 
-  const [loadingFruit, setFruit] = useState([])
+  const [loadingFruit, setFruit] = useState([name])
     useEffect(() => {
       async function fetchData() {
       const res = await apiFruit.get("")
@@ -19,7 +18,7 @@ function Fruta() {
       }
       fetchData()
     },
-[name, apiFruit])
+[])
 
 return (
   <section className="fruit-container">

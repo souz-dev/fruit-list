@@ -4,7 +4,7 @@ import {useHistory} from 'react-router-dom'
 export function Card(props) {
   const history = useHistory()
   const handleClick = () =>{
-    history.push('/fruta')
+    history.push(`/fruta/${props.name}`)
   }
   return (
     <div className="card" onClick={handleClick}>
