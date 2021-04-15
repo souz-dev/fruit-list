@@ -6,7 +6,6 @@ import Home from './pages/Home';
 
 import './styles/global.css'
 
-
 ReactDOM.render(
 
   <BrowserRouter>

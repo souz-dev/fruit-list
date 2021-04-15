@@ -1,19 +1,16 @@
 header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background: var(--primary);
-    width: 100vw;
-    padding: 0.75rem;
-    
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--primary);
+  width: 100%;
+  padding: 0.75rem;
 }
-
 
 .header > p {
-    font-size: 1.5rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    color: rgb(41, 52, 53);
-    margin-left: 30px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: rgb(41, 52, 53);
+  margin-left: 30px;
 }
-
