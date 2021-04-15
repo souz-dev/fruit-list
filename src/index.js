@@ -11,7 +11,7 @@ ReactDOM.render(
 
   <BrowserRouter>
   <Switch>
-    <Route path="/fruta" component={Fruta} exact  /> 
+    <Route path="/fruta:name" component={Fruta} exact  /> 
     <Route path="/" component={Home} exact /> 
   </Switch>
   </BrowserRouter>,
