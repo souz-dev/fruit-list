@@ -1,18 +1,26 @@
-card {
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.container > .card {
     background-color: #d1d1d1;
     border-radius: 7px;
     margin: 0.75rem;
     cursor: pointer;
     transition: all 0.2s;
     display: flex;
-    flex: 1  1 24.24%;
+    flex: 1;
+    max-width: 500px;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 1.5rem;
   
   }
   
-  card:hover {
+  .card:hover {
     box-shadow: rgb(32 33 36 / 28%) 0px 1px 6px 0px;
   }
   
@@ -32,4 +40,5 @@ card {
     border-radius: 7px;
     height: 100%;
   }
+  
   

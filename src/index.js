@@ -6,12 +6,11 @@ import Fruta from './pages/Fruta';
 
 import './styles/global.css'
 
-
 ReactDOM.render(
 
   <BrowserRouter>
   <Switch>
-    <Route path="/fruta/:name" component={Fruta} exact  /> 
+    <Route path="/fruta/:name" component={Fruta}  /> 
     <Route path="/" component={Home} exact /> 
   </Switch>
   </BrowserRouter>,

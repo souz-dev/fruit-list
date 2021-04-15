@@ -18,12 +18,12 @@ function Fruta() {
       }
       fetchData()
     },
-[name])
+[name, apiFruit])
 
 return (
   <section>
     <Header />
-    
+    <div className="container" >
     {loadingFruit.filter(fruit => fruit.name === name).map(fruit => (
             <div className="card" key={fruit.name}>
               <img src={fruit.photo} alt={fruit.name} loading="lazy"/>
@@ -38,7 +38,7 @@ return (
               </div>
               </div>
           ))}
-    
+    </div>
   </section>
 )
 }
