@@ -1,0 +1,16 @@
+.footer {
+    display: flex;
+    align-items: center;
+     justify-content: center;
+     background: var(--yellow);
+     width: 100%;
+    padding: 0.75rem;
+}
+
+.footer > p {
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: rgb(41, 52, 53);
+    margin-left: 30px;
+  }

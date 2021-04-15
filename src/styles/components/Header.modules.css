@@ -15,10 +15,3 @@ header {
   margin-left: 30px;
 }
 
-.header > h1::before{
-  content: '';
-  width: 30px;
-  height: 5px;
-  background: #fff;
-  color: #fff;
-}

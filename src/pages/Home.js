@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import { Header } from '../components/Header'
+import { Footer} from '../components/Footer'
 import { Card } from '../components/Card'
 import apiFruit from '../services/api'
 import '../styles/pages/Home.modules.css'
@@ -28,6 +29,7 @@ function Home() {
         <Card key={item.name} name={item.name} img={item.photo}/>
       ))}
       </main>
+      <Footer />
     </div>
   )
 }
